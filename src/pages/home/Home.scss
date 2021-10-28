@@ -1,0 +1,138 @@
+// importing variables
+@import '../../styles/variables';
+@import '../../styles/mixin';
+
+
+.container-home {
+    width: 98%;
+    max-width: 600px;
+    min-height: 100vh;
+    padding: 5% 0 20px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include tablet {
+        padding-top: 180px;
+        align-items: flex-start;
+    }
+
+    @include mobile {
+        width: 100%;
+        padding: 180px 10px 20px;
+    }
+
+    .home-all {
+        background: rgba(255, 255, 255, 0.85);
+        box-shadow: 0 0 20px gray;
+        padding: 50px 30px;
+        display: flex;
+        min-height: 60%;
+        align-items: center;
+
+        @include tablet {
+            padding: 20px 20px;
+            width: 100%;
+        }
+
+        @include mobile {
+            flex-direction: column;
+            padding: 20px 30px;
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            margin-right: 30px;
+
+            @include mobile {
+                margin-right: 0;
+                height: 200px;
+                width: 200px;
+            }
+        }
+
+        > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            * {
+                margin-top: 10px;
+            }
+
+            h1 {
+                white-space: nowrap;
+            }
+
+            h1 span {
+                color: $first-color;
+            }
+
+            h1:nth-of-type(1) {
+                font-size: 2rem;
+                width: 120px;
+                text-align: center;
+                margin: 0 auto 10px;
+
+                @include mobile {
+                    display: none;
+                }
+            }
+
+            @include mobile {
+                h1 {
+                    font-size: 1.9rem;
+                }
+            }
+
+            p {
+                padding-bottom: 10px;
+                border-bottom: 1px solid gray;
+            }
+        }       
+    }
+
+    .quote {
+        width: 400px;
+        font-style: italic;
+        position: absolute;
+        top: 80px;
+        right: 30px;
+        line-height: 30px;
+        font-size: 1.2rem;
+        color: white;
+        text-shadow: 0 0 20px black;
+
+        animation: float 1.5s ease-in alternate;
+
+        @keyframes float {
+            from {
+                right: -360px;
+            }
+        }
+
+        div:nth-of-type(2) {
+            font-weight: bold;
+            text-align: right;
+            color: $first-color;
+        }
+
+        @include tablet {
+            font-size: 1rem;
+            top: 70px;
+        }
+
+        @include mobile {
+            width: 90%;
+            right: 3%;
+            font-size: 1rem;
+        }
+    }
+
+}

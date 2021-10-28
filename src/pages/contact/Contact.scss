@@ -1,0 +1,96 @@
+@import '../../styles/variables';
+@import '../../styles/mixin';
+
+
+.container-contact {
+    width: 100vw;
+    min-height: 100vh;
+
+    // padding-top: 80px;
+    padding: 80px 0 20px;
+
+    // border: 1px red solid;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: white;
+        text-shadow: 0 0 10px black;
+    }
+
+    .contact-form {
+        // border: 1px blue solid;
+
+        width: 600px;
+        height: fit-content;
+        margin: 0 auto;
+
+        background: rgba(255, 255, 255, 0.85);
+        box-shadow: 0 0 20px gray;
+        padding: 10px 30px 20px;
+
+        @include tablet {
+            width: 75%;
+            padding: 0 15px 10px;
+        }
+
+        @include mobile {
+            width: 92%;
+            padding: 0 12px 10px;
+        }
+
+        > div {
+            margin: 5px 0;
+            width: 100%;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            text-transform: uppercase;   
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 7px;
+            border: 1px solid white;
+            box-shadow: 0 0 5px gray;
+
+            // border-radius: 5px;
+        }
+
+        
+        > div:first-child {
+            display: flex;
+            justify-content: space-between;
+
+            // border: 1px green solid;
+
+            > div {
+                width: 45%;
+
+                @include tablet {
+                    width: 48%;
+                }
+            }
+        }
+
+        .submit-btn {
+            width: 80px;
+            background: $first-color;
+            border: 2px solid $first-color;
+            color: white;
+            padding: 2px 5px;
+            font-size: 1rem;
+            margin-top: 10px;
+
+            &:hover {
+                background: white;
+                box-shadow: 0 0 5px gray;
+                transition: 0.6s;
+                color: $first-color;
+                cursor: pointer;
+            }
+        }
+    }
+}

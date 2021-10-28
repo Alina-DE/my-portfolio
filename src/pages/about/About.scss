@@ -1,0 +1,123 @@
+// importing variables
+@import '../../styles/variables';
+@import '../../styles/mixin';
+
+
+.container-about {
+    width: 750px;
+    min-height: 100vh;
+    padding: 80px 0 20px;
+    margin: 0 auto;
+
+    // border: 1px solid red;
+
+    @include tablet {
+        width: 95%;
+        max-width: 620px;
+    }
+
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: white;
+        text-shadow: 0 0 10px black;
+    }
+
+    .about-all {
+        // border: 1px solid blue;
+        background: rgba(255, 255, 255, 0.85);
+        box-shadow: 0 0 20px gray;
+        padding: 10px 10px 0;
+
+        @include mobile {
+            padding: 10px 5px 0;
+        }
+
+        .about-top {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            // border: 1px solid blue;
+
+            @include mobile {
+                flex-direction: column;
+            }
+
+            aside {
+                width: 300px;
+                text-align: center;
+                // border: 1px solid orange;
+                align-self: center;
+
+                @include mobile {
+                    width: 100%;
+                    
+                }
+
+                * {
+                    margin-top: 10px;
+                }
+
+                img {
+                    display: block;
+                    height: 180px;
+                    width: 180px;
+                    border-radius: 50%;
+                    margin: auto;
+                }
+
+                h1 span {
+                    color: $first-color;
+                }
+            }
+
+            main {
+                width: 600px;
+                padding: 20px;
+                line-height: 30px;
+                // font-size: 1rem;
+
+                @include mobile {
+                    width: 100%;
+                    font-size: 0.9rem;
+                }
+
+            }
+        }
+
+        section {
+            padding-bottom: 10px;
+
+            h3 {
+                text-align: center;
+            }
+
+            .skills {
+                width: 100%;
+                margin: 10px auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                // border: 1px solid orange;
+
+
+                div {
+                    border: 1px solid gray;
+                    width: 85px;
+
+                    text-align: center;
+                    padding: 5px;
+                    margin: 5px;
+
+                    &:hover {
+                        background: $first-color;
+                        border: 1px solid $first-color;
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+    }
+}
