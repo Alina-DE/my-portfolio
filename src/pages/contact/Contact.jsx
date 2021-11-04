@@ -10,7 +10,7 @@ function Contact() {
 
             <h2>Contact Me</h2>
 
-            <form className="contact-form" target="_blank" action="https://formsubmit.co/24aaa28c0aede191932dc7ad1afd6434" method="POST">
+            <form className="contact-form" target="_blank" action={`https://formsubmit.co/${process.env.REACT_APP_FORM_KEY}`} method="POST">
 
                 <div>
                     <div>

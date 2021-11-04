@@ -10,6 +10,7 @@ function Home() {
     const [author, setAuthor] = useState("")
     const [quote, setQuote] = useState("")
 
+    // getting a random quote
     const getQuote = async () => {
         let url = "https://type.fit/api/quotes";
 

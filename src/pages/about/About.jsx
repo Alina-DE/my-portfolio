@@ -7,8 +7,6 @@ import "./About.scss"
 
 function About() {
 
-
-
     return (
         <div className="container-about">
 
@@ -26,13 +24,14 @@ function About() {
                     </aside>
 
                     <main>
-                        <p>I am a world traveller turned Web Developer.</p>
+                        <p>Hi! I am a world traveller turned Web Developer.</p>
 
-                        <p>Recently I graduated from a 1-year full-time intensive training on Full Stack Web Development (MERN).</p>
+                        <p>2020 presented me a unique opportunity to re-invent my career and after wonderful years in tourism, I took a 1-year break and used this time to learn something new - Full Stack Web Development (MERN) at <a href="https://digitalcareerinstitute.org/" target="_blank" rel="noopener noreferrer"><abbr title="Digital Career Institute gGmbH">DCI</abbr></a>.</p>
 
-                        <p>I am passionate about coding, finding solutions, improving and optimizing. From my previous work in tourism I am bringing flexibility, communication skills, solid problem-solving skills and an experience of working in an international environment.</p>
+                        <p>I've discovered my passion for coding - I enjoy finding solutions, improving and optimizing. I see coding as a fun puzzle solving with different ways of putting pieces together in order to get the whole picture.
+                        </p>
 
-                        <p>I'm seeking now a web developer position to apply my skills and knowledge, challenge myself and deliver solution-oriented approaches.</p>
+                        <p>I am grateful to tourism for training my communication skills and now in web development I am uncovering and applying my full potential. </p>
                     </main>
                 </div>
 
@@ -46,7 +45,6 @@ function About() {
                         <div>Bootstrap</div>
                         <div>JavaScript</div>
                         <div>ReactJS</div>
-
                     </div>
 
                     <div className="skills">
@@ -58,9 +56,7 @@ function About() {
                         <div>GitHub</div>
                     </div>
                 </section>
-
             </div>
-
         </div>
     )
 }

@@ -9,21 +9,19 @@ import messageboard from "../../images/messageboard.png"
 import grocerylist from "../../images/grocerylist.png"
 import randomquote from "../../images/randomquote.jpg"
 import nature from "../../images/nature.png"
-// import cartoon from "../../images/cartoon.png"
 import bingo from "../../images/bingo.jpg"
 
 import { FaGithub } from 'react-icons/fa'
 
 function Projects() {
 
-
     return (
         <div className="container-projects">
             <h2>My Recent Projects</h2>
 
             <div className="projects">
-                <div className="box">
 
+                <div className="box">
                     <div><img src={cinefilo} alt="Cinefilo movie app" /></div>
 
                     <h4>Cinefilo</h4>
@@ -107,20 +105,6 @@ function Projects() {
                         <a href="https://alina-de.github.io/Portfolio_Amazing_Nature/" target="_blank" rel="noreferrer">View Online</a>
                     </div>
                 </div>
-
-                {/* <div className="box">
-                    <div><img src={cartoon} alt="Cartoon" /></div>
-
-                    <h4>Funny Cartoon :)</h4>
-
-                    <p>Some fun with icons and animation</p>
-
-                    <div className="card-links">
-                        <a href="https://github.com/Alina-DE/Nature_Cartoon" target="_blank" rel="noreferrer"><FaGithub /></a>
-
-                        <a href="https://alina-de.github.io/Nature_Cartoon/" target="_blank" rel="noreferrer">View Online</a>
-                    </div>
-                </div> */}
             </div>
         </div>
     )

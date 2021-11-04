@@ -2,14 +2,6 @@
 @import './styles/_mixin.scss';
 
 
-/* my reset css */
-*, *::before, *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-}
-
 .icons {
   position: fixed;
   top: calc(50% - 50px);
@@ -24,11 +16,6 @@
     top: calc(100% - 120px);
     right: 10px;
   }
-
-  // @include mobile{
-  //   top: calc(43% - 50px);
-  //   right: 10px;
-  // }
 
   a {
     color: $first-color;

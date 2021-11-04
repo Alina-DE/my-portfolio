@@ -3,7 +3,6 @@ import './App.scss';
 
 // importing the components
 import NavBar from './components/navBar/NavBar';
-// import Footer from "./components/footer/Footer";
 
 // importing pages
 import About from './pages/about/About'

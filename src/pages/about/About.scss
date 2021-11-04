@@ -9,8 +9,6 @@
     padding: 80px 0 20px;
     margin: 0 auto;
 
-    // border: 1px solid red;
-
     @include tablet {
         width: 95%;
         max-width: 620px;
@@ -25,7 +23,6 @@
     }
 
     .about-all {
-        // border: 1px solid blue;
         background: rgba(255, 255, 255, 0.85);
         box-shadow: 0 0 20px gray;
         padding: 10px 10px 0;
@@ -38,7 +35,6 @@
             width: 100%;
             display: flex;
             justify-content: space-around;
-            // border: 1px solid blue;
 
             @include mobile {
                 flex-direction: column;
@@ -47,7 +43,6 @@
             aside {
                 width: 300px;
                 text-align: center;
-                // border: 1px solid orange;
                 align-self: center;
 
                 @include mobile {
@@ -75,14 +70,25 @@
             main {
                 width: 600px;
                 padding: 20px;
-                line-height: 30px;
-                // font-size: 1rem;
+                line-height: 25px;
+
+                p {
+                    margin-bottom: 8px;
+                }
+
+                a {
+                    color: $first-color;
+                    font-weight: bold;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
 
                 @include mobile {
                     width: 100%;
                     font-size: 0.9rem;
                 }
-
             }
         }
 
@@ -99,9 +105,6 @@
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
-
-                // border: 1px solid orange;
-
 
                 div {
                     border: 1px solid gray;

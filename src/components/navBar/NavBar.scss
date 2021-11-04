@@ -55,14 +55,12 @@ nav {
             margin: 0 10px;
             width: 100px;
             padding: 10px 5px;
-            // border: 1px red solid;
 
             &.active, &:hover {
                 text-decoration: 3px underline solid $first-color;
                 text-underline-position: under;
                 transition: 0.5s;
                 font-weight: bold;
-                // color: $first-color;
             }
 
             @include tablet {
@@ -73,13 +71,10 @@ nav {
 
     .nav-toggle {
         display: none;
-        color: white;
         color: $first-color;
 
-
-        & :hover {
+        &:hover {
             cursor: pointer;
-            color: $first-color;
         }
 
         @include mobile {
@@ -93,4 +88,3 @@ nav {
         }    
     }
 }
-

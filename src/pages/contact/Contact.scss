@@ -5,11 +5,7 @@
 .container-contact {
     width: 100vw;
     min-height: 100vh;
-
-    // padding-top: 80px;
     padding: 80px 0 20px;
-
-    // border: 1px red solid;
 
     h2 {
         text-align: center;
@@ -19,8 +15,6 @@
     }
 
     .contact-form {
-        // border: 1px blue solid;
-
         width: 600px;
         height: fit-content;
         margin: 0 auto;
@@ -47,7 +41,13 @@
         label {
             display: block;
             margin: 10px 0 5px;
-            text-transform: uppercase;   
+            text-transform: uppercase;
+
+            &::after {
+                content: "*";
+                color: $first-color;
+                padding-left: 3px;
+            }
         }
 
         input, textarea {
@@ -55,16 +55,12 @@
             padding: 7px;
             border: 1px solid white;
             box-shadow: 0 0 5px gray;
-
-            // border-radius: 5px;
         }
 
         
         > div:first-child {
             display: flex;
             justify-content: space-between;
-
-            // border: 1px green solid;
 
             > div {
                 width: 45%;

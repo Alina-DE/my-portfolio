@@ -15,7 +15,7 @@ function NavBar() {
     return (
         <nav className="navbar">
             <NavLink exact to='/'>
-                <div className="logo">Alina Reinalt</div>
+                <h1 className="logo">Alina Reinalt</h1>
             </NavLink>
 
             <div className="nav-items" id={isOpen ? "" : "hidden"} onBlur={() => setIsOpen(false)}>
