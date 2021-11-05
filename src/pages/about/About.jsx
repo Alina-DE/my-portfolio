@@ -26,12 +26,15 @@ function About() {
                     <main>
                         <p>Hi! I am a world traveller turned Web Developer.</p>
 
-                        <p>2020 presented me a unique opportunity to re-invent my career and after wonderful years in tourism, I took a 1-year break and used this time to learn something new - Full Stack Web Development (MERN) at <a href="https://digitalcareerinstitute.org/" target="_blank" rel="noopener noreferrer"><abbr title="Digital Career Institute gGmbH">DCI</abbr></a>.</p>
+                        <p>2020 presented me a unique opportunity to reinvent my career and after wonderful years in tourism, I took a 1-year break and used this time to learn something new :
+                            <br />
+                            Full Stack Web Development (MERN) at <a href="https://digitalcareerinstitute.org/" target="_blank" rel="noopener noreferrer"><abbr title="Digital Career Institute gGmbH">DCI</abbr></a>.
+                        </p>
 
                         <p>I've discovered my passion for coding - I enjoy finding solutions, improving and optimizing. I see coding as a fun puzzle solving with different ways of putting pieces together in order to get the whole picture.
                         </p>
 
-                        <p>I am grateful to tourism for training my communication skills and now in web development I am uncovering and applying my full potential. </p>
+                        <p>Web development allows me to uncover and apply my full potential. I am grateful to tourism for training my communication skills though :) </p>
                     </main>
                 </div>
 

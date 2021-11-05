@@ -72,6 +72,8 @@ nav {
     .nav-toggle {
         display: none;
         color: $first-color;
+        font-size: 1.4rem;
+        margin-top: 7px;
 
         &:hover {
             cursor: pointer;

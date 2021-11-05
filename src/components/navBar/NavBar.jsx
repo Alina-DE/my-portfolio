@@ -13,12 +13,14 @@ function NavBar() {
 
 
     return (
-        <nav className="navbar">
+        <nav className="navbar"
+            onMouseUp={() => setIsOpen(false)}
+        >
             <NavLink exact to='/'>
                 <h1 className="logo">Alina Reinalt</h1>
             </NavLink>
 
-            <div className="nav-items" id={isOpen ? "" : "hidden"} onBlur={() => setIsOpen(false)}>
+            <div className="nav-items" id={isOpen ? "" : "hidden"}>
                 <NavLink exact to='/about'>
                     <div>ABOUT</div>
                 </NavLink>
@@ -34,7 +36,7 @@ function NavBar() {
 
             {/* menu icon for mobile screen */}
             <div className='nav-toggle' onClick={() => setIsOpen(!isOpen)} >
-                {!isOpen ? <FaBars /> : <FaTimes />}  
+                {!isOpen ? <FaBars /> : <FaTimes />}
             </div>
         </nav>
     )
